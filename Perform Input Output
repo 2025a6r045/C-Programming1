@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    
+    char x;
+    int y;
+    float z;
+    double d;
+    
+    scanf("%c%d%f%lf", &x,&y,&z,&d);
+    printf("%c %d %.2f %.6lf",x,y,z,d);
+    
+    return 0;
+}
