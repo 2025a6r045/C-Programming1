@@ -1,0 +1,85 @@
+// Exp2: (a) Program for arithmetic operations like addition, subtraction, multiplication and remainder
+
+#include<stdio.h>
+
+int main(){
+    int x,y,add,sub,multiply,remainder;
+    
+    printf("Enter the value of x : ");
+    scanf("%d", &x);
+
+    printf("Enter the value of y: ");
+    scanf("%d", &y);
+    
+    
+    add =x+y;
+    sub = x-y;
+    multiply = x*y;
+    remainder = x%y;
+    
+    printf("add = %d\nsubtract= %d\nmultiply= %d\nremainder= %d ", add,sub,multiply,remainder );
+    
+    return 0;
+}
+
+
+
+
+// Exp2: (b) Program to calculate area and perimeter of circle, square and rectangle
+
+
+#include<stdio.h>
+int main(){
+    float const pi = 3.141;
+    int area1,per1, side;
+ 
+    printf("Enter side of square: " );
+    scanf("%d",&side);
+    per1 = 4*side;
+    area1 = side*side;
+    printf("perimeter of square= %d\narea of square= %d\n",per1,area1);
+    
+    int len,bre;
+    printf("Enter lenght and breath: " );
+    scanf("%d%d",&len,&bre);
+    per1 = 2*(len+bre);
+    area1 = len*bre;
+    printf("perimeter of rectanle= %d\narea of rectangle= %d\n",per1,area1);
+    
+    float rad,per2,area2;
+    printf("Enter radius of circle: " );
+    scanf("%f",&rad);
+    per2 = 2*pi*rad;
+    area2 = pi*rad*rad;
+    printf("perimeter of circle= %f\narea of square= %f ",per2,area2);
+    
+
+    return 0;
+}
+
+
+
+
+// Exp2: (c) Program to find the Euclidean distance between two points in a plane
+
+#include<stdio.h>
+#include<math.h>
+
+int main (){
+    
+    float x1,x2,y1,y2,r;
+    
+    printf("Enter coordinate1: ");
+    scanf("%f%f",&x1,&y1);
+    
+    printf("Enter coordinate2: ");
+    scanf("%f%f",&x2,&y2);
+    
+    r=sqrt(pow(x1-x2,2)+pow(y1-y2,2));
+    
+    printf("distance= %f",r);
+    
+    return 0;
+
+}
+
