@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    
+    int base,expo,r;
+    scanf("%d%d",&base,&expo);
+    
+    r=pow(base,expo);
+
+    printf("%d",r);
+    return 0;
+
+}
