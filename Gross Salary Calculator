@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+
+    int b;
+    float hra,da,s;
+    scanf("%d",&b);
+    if (b<=10000){
+        hra=20.0/100.0*b;
+        da=30.0/100.0*b;
+        s=b+hra+da;
+        printf("%.2f",s);
+    }
+    else if (b<=20000 && b>10000){
+        hra=25.0/100.0*b;
+        da=40.0/100.0*b;
+        s=b+hra+da;
+        printf("%.2f",s);
+    }
+    else{
+        hra=30.0/100.0*b;
+        da=50.0/100.0*b;
+        s=b+hra+da;
+        printf("%.2f",s);
+    }
+    
+    return 0;
+}
