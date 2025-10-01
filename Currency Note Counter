@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+
+    int c,x,a;
+    scanf("%d",&c);
+    x=c/500;
+    a=c%500;
+    if (x!=0){
+        printf("500: %d\n",x);
+    }
+    x=a/100;
+    a=a%100;
+    if (x!=0){
+        printf("100: %d\n",x);
+    }
+    x=a/50;
+    a=a%50;
+    if (x!=0){
+        printf("50: %d\n",x);
+    }
+    x=a/20;
+    a=a%20;
+    if (x!=0){
+        printf("20: %d\n",x);
+    }
+    x=a/10;
+    a=a%10;
+    if (x!=0){
+        printf("10: %d\n",x);
+    }
+    x=a/5;
+    a=a%5;
+    if (x!=0){
+        printf("5: %d\n",x);
+    }
+    x=a/2;
+    a=a%2;
+    if (x!=0){
+        printf("2: %d\n",x);
+    }
+    x=a/1;
+    a=a%1;
+    if (x!=0){
+        printf("1: %d",x);
+    }
+    return 0;
+}
